@@ -49,7 +49,7 @@ $trackid = session_id();
 
                 //    select query to get data from database
 
-                $sqll = "SELECT * , Price*Quantity_bought AS total_price FROM Orders WHERE person_id ='$trackid'";
+                $sqll = "SELECT * , Price*Quantity_bought AS total_price FROM orders WHERE person_id ='$trackid'";
                 $resullt = $conn->query($sqll);
 
                 if ($resullt->num_rows > 0) {

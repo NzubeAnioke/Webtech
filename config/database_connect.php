@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$database= "ENSL_STOCK_MARKET_76112023";
+$password = "admin";
+$database= "ensl_stock_market_76112023";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$database);
