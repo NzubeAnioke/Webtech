@@ -102,7 +102,7 @@ if (isset($_POST["signup_submit"])) {
 
       $password = md5($password);
 
-      $sql =  "INSERT INTO `person`(`fname`, `lname`, `email`, `Tel`,`p_password`) VALUES ('$fname','$lname', '$tel','$email', '$password')";
+      $sql =  "INSERT INTO `person`(`fname`, `lname`, `email`, `Tel`,`p_password`) VALUES ('$fname','$lname', '$email','$tel', '$password')";
 
       if ($conn->query($sql) === TRUE) {
 
