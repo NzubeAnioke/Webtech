@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 
         //insert into db order table
         // Create connection
-        $conn = mysqli_connect("localhost", "root", "", "ENSL_STOCK_MARKET_76112023");
+        $conn = mysqli_connect("localhost", "root", "admin", "ensl_stock_market_76112023");
 
         // Check connection
         if ($conn->connect_error) {

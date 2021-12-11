@@ -77,7 +77,7 @@
     session_start();
     $trackid = session_id();
     // print_r($trackid);
-    $conn = mysqli_connect("localhost", "root", "", "ENSL_STOCK_MARKET_76112023");
+    $conn = mysqli_connect("localhost", "root", "admin", "ensl_stock_market_76112023");
     // Check connection
     if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
@@ -85,7 +85,7 @@
 
     // select query to get data from stock table in the database
 
-    $sql = "SELECT * FROM Stock";
+    $sql = "SELECT * FROM stock";
     $result = $conn->query($sql);
     //$user_quantity = null;
     if ($result->num_rows > 0) {

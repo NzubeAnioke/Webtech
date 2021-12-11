@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `orders`
 --
 
+CREATE DATABASE `ensl_stock_market_76112023`;
+
+USE ensl_stock_market_76112023;
+
 CREATE TABLE `orders` (
   `orderID` int(11) NOT NULL,
   `person_id` int(11) DEFAULT NULL,
